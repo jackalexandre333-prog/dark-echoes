@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background-color: #160016;
+  color: rgb(233, 0, 0);
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  background-color: #111;
+  max-width: 900px;
+  min-height: 460px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+}
+
+.episodes h2,
+.details h2 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.episodes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.episodes li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.episodes li:hover {
+  background-color: #292929;
+}
+
+.episodes li.selected {
+  background-color: #383838;
+}
+
+.details h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.details p {
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 0 0 10px;
+}
+
+.details button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: red;
+}
+
+@media (max-width: 650px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
